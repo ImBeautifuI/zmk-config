@@ -41,6 +41,11 @@
         // both right thumb keys
         // internal-left & external-right thumb keys
         // both left thumb keysnew_combo {};
+
+        new_combo {
+            bindings = <&tog 5>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
