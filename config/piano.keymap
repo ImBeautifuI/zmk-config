@@ -39,13 +39,6 @@
         compatible = "zmk,combos";
 
         // both right thumb keys
-
-        combo_accent {
-            timeout-ms = <300>;
-            key-positions = <32 33>;
-            bindings = <&mo ACCENT>;
-        };
-
         // internal-left & external-right thumb keys
 
         new_combo {
@@ -66,7 +59,7 @@
 &kp Q  &kp W  &kp E    &kp R             &kp T        &kp Z    &kp U      &kp I    &kp O          &kp P
 &kp A  &kp S  &kp D    &kp F             &kp G        &kp H    &kp J      &kp K    &kp L  &kp SEMICOLON
 &kp Y  &kp X  &kp C    &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT      &kp SLASH
-                     &mo EXT  &mt LSHIFT SPACE    &kp SPACE  &sl SYM
+                     &mo EXT  &mt LSHIFT SPACE    &kp SPACE  &mo SYM
             >;
         };
 
