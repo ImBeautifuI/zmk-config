@@ -1,0 +1,25 @@
+
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+if SHIELD_CARD_V2_NORM_LEFT || SHIELD_CARD_V2_NORM_RIGHT
+		config ZMK_KEYBOARD_NAME
+		default "The Card v2"
+endif
+
+if SHIELD_CARD_V2_NORM_RIGHT
+	config ZMK_SPLIT
+	default y
+endif
+
+if SHIELD_CARD_V2_NORM_LEFT
+	config ZMK_SPLIT
+	default y
+
+	config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+endif
