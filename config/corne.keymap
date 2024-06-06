@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        gaming {
+            bindings = <&tog 4>;
+            key-positions = <36 37 38>;
+            layers = <0>;
+        };
+
+        normal {
+            bindings = <&tog 0>;
+            key-positions = <36 37 38>;
+            layers = <4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,6 +79,15 @@
 &trans  &trans  &trans  &trans  &trans       &bt BT_SEL 1    &bt BT_DISC 1  &trans       &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &bt BT_CLR   &bt BT_SEL 2    &bt BT_DISC 2  &trans       &trans  &trans  &trans  &trans
                         &trans  &trans       &trans          &trans         &trans       &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp ESC    &kp TAB    &kp N1  &kp N2    &kp N3     &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
+&kp T      &kp LCTRL  &kp A   &kp W     &kp D      &kp R     &trans  &trans  &trans  &trans  &trans  &trans
+&kp POUND  &kp LSHFT  &kp Y   &kp S     &kp C      &kp V     &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp LALT  &kp SPACE  &trans    &trans  &trans  &trans
             >;
         };
     };
