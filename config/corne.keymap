@@ -13,13 +13,13 @@
         compatible = "zmk,combos";
 
         gaming {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <36 37 38>;
             layers = <0>;
         };
 
         normal {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <36 37 38>;
             layers = <4>;
         };
